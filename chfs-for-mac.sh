@@ -19,6 +19,8 @@ unzip -o ${dir}/*.zip -d ${dir} &>/dev/null
 chmod 755 ${dir}/chfs
 
 cat >"${dir}/chfs.ini"<<EOF
+# 监听端口
+port=6666
 # 共享根目录
 # 注意：带空格的目录须用引号包住，如 path="c:\a uply name\folder"
 path=/Users/${name}/Desktop/sharedoc
@@ -30,7 +32,7 @@ html.notice=\`<div style="background:green;color:white;font-size:25px"><marquee 
 #     rule=::
 #     rule=root:123456:RW
 #     rule=readonlyuser:123456:R
-rule=::rwx
+rule=::rw
 EOF
 
 cat >"/Users/${name}/Desktop/启动共享"<<EOF
