@@ -20,7 +20,7 @@ chmod 755 ${dir}/chfs
 
 cat >"${dir}/chfs.ini"<<EOF
 # 监听端口
-port=6666
+port=8081
 # 共享根目录
 # 注意：带空格的目录须用引号包住，如 path="c:\a uply name\folder"
 path=/Users/${name}/Desktop/sharedoc
