@@ -12,7 +12,7 @@ echo "创建配置文件目录,文稿里的Tchfs目录请勿删除!"
 mkdir ${dir} &> /dev/null
 
 echo "下载软件中..."
-curl -C - http://iscute.cn/tar/chfs/1.8/chfs-mac-amd64-1.9.zip -o ${dir}/chfs.zip --progress
+curl -C - http://iscute.cn/tar/chfs/1.9/chfs-mac-amd64-1.9.zip -o ${dir}/chfs.zip --progress
 
 echo "解压文件并赋权"
 unzip -o ${dir}/*.zip -d ${dir} &>/dev/null
