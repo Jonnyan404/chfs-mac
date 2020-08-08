@@ -9,4 +9,4 @@ RUN apk add --no-cache tzdata \
     && chmod +x /usr/bin/chfs
 
 ENTRYPOINT ["/usr/bin/chfs"]
-CMD --path=/data
+CMD ["--path=/data"]
