@@ -1,5 +1,5 @@
 FROM alpine
-LABEL maintainer="www.jonnyan404.top:8088"
+LABEL maintainer="www.mrdoc.fun"
 ENV TZ=Asia/Shanghai
 
 COPY chfs  /usr/bin/chfs
